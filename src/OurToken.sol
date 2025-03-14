@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
 
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 contract OurToken is ERC20 {
 
@@ -9,3 +9,5 @@ contract OurToken is ERC20 {
         _mint(msg.sender, initialSupply); // token supply is assigned to the contract creator
     }
 }
+
+//  more can be found here about ERC20: https://eips.ethereum.org/EIPS/eip-20
